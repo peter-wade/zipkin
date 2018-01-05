@@ -1,0 +1,16 @@
+    
+spring: 
+  application:
+    name: zipkin
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}/mysql
+    username: root
+    password: root
+# Switch this on to create the schema on startup:
+    initialize: true
+    continueOnError: true
+sleuth:
+    enabled: false
+zipkin:
+  storage:
+    type: mysql

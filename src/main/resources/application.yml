@@ -1,0 +1,12 @@
+server: 
+  port: 9411
+logging:
+  level: 
+    root: info
+    org.springframework.web: DEBUG
+    
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://guest:phfund@172.19.56.121:8761/eureka/
+
